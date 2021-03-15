@@ -1,0 +1,31 @@
+{
+    "os": "macOS-11.2.3-x86_64-i386-64bit",
+    "python": "3.8.2",
+    "heartbeatAt": "2021-03-15T16:05:14.903745",
+    "startedAt": "2021-03-15T16:05:12.645350",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "16",
+        "--epochs",
+        "5",
+        "--data",
+        "coco.yaml"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/train.py",
+    "git": {
+        "remote": "https://github.com/thannhatttruong/MVP_XAMPLE.git",
+        "commit": "d51bcb95d2c4610aa728fa58353135c161a3ed72"
+    },
+    "email": "truongtnse130426@fpt.edu.vn",
+    "root": "/Users/truongtn",
+    "host": "MacBook-Pro-cua-Than.local",
+    "username": "truongtn",
+    "executable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3"
+}

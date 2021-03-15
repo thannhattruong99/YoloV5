@@ -1,0 +1,17 @@
+2021-03-15 16:48:49,222 INFO    MainThread:4861 [internal.py:wandb_internal():88] W&B internal server running at pid: 4861, started at: 2021-03-15 16:48:49.222183
+2021-03-15 16:48:49,223 DEBUG   HandlerThread:4861 [handler.py:handle_request():101] handle_request: run_start
+2021-03-15 16:48:49,224 INFO    WriterThread:4861 [datastore.py:open_for_write():77] open: /Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/wandb/offline-run-20210315_164848-2x6ktdab/run-2x6ktdab.wandb
+2021-03-15 16:48:50,880 DEBUG   HandlerThread:4861 [meta.py:__init__():34] meta init
+2021-03-15 16:48:50,880 DEBUG   HandlerThread:4861 [meta.py:__init__():48] meta init done
+2021-03-15 16:48:50,880 DEBUG   HandlerThread:4861 [meta.py:probe():190] probe
+2021-03-15 16:48:50,881 DEBUG   HandlerThread:4861 [meta.py:_setup_git():180] setup git
+2021-03-15 16:48:50,903 DEBUG   HandlerThread:4861 [meta.py:_setup_git():187] setup git done
+2021-03-15 16:48:50,903 DEBUG   HandlerThread:4861 [meta.py:_save_pip():52] save pip
+2021-03-15 16:48:50,904 DEBUG   HandlerThread:4861 [meta.py:_save_pip():66] save pip done
+2021-03-15 16:48:50,904 DEBUG   HandlerThread:4861 [meta.py:probe():231] probe done
+2021-03-15 16:50:58,419 WARNING MainThread:4861 [internal.py:is_dead():343] Internal process exiting, parent pid 4828 disappeared
+2021-03-15 16:50:58,427 ERROR   MainThread:4861 [internal.py:wandb_internal():142] Internal process shutdown.
+2021-03-15 16:50:58,884 INFO    HandlerThread:4861 [handler.py:finish():535] shutting down handler
+2021-03-15 16:50:58,878 INFO    WriterThread:4861 [datastore.py:close():258] close: /Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/wandb/offline-run-20210315_164848-2x6ktdab/run-2x6ktdab.wandb
+2021-03-15 16:50:59,417 INFO    SenderThread:4861 [sender.py:finish():872] shutting down sender
+2021-03-15 16:50:59,437 INFO    MainThread:4861 [internal.py:handle_exit():78] Internal process exited

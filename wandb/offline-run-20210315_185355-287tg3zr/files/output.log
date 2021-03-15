@@ -1,0 +1,12 @@
+[34m[1mtrain: [0mScanning 'data/train/Person.cache' for images and labels... 400 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 400/400 [00:00<?, ?it/s][34m[1mtrain: [0mScanning 'data/train/Person.cache' for images and labels... 400 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 400/400 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning 'data/validation/Person.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s][34m[1mval: [0mScanning 'data/validation/Person.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s]
+Plotting labels... 
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.29, Best Possible Recall (BPR) = 1.0000
+Image sizes 1024 train, 1024 test
+Using 8 dataloader workers
+Logging results to runs/train/exp8
+Starting training for 5 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/25 [00:00<?, ?it/s]       0/4        0G    0.1193   0.07674         0     0.196       116      1024:   0%|          | 0/25 [00:55<?, ?it/s]       0/4        0G    0.1193   0.07674         0     0.196       116      1024:   4%|▍         | 1/25 [00:55<22:04, 55.21s/it]       0/4        0G    0.1186    0.0783         0    0.1969       123      1024:   4%|▍         | 1/25 [01:47<22:04, 55.21s/it]       0/4        0G    0.1186    0.0783         0    0.1969       123      1024:   8%|▊         | 2/25 [01:47<20:23, 53.21s/it]       0/4        0G    0.1184   0.07672         0    0.1951       107      1024:   8%|▊         | 2/25 [02:36<20:23, 53.21s/it]       0/4        0G    0.1184   0.07672         0    0.1951       107      1024:  12%|█▏        | 3/25 [02:36<18:55, 51.62s/it]       0/4        0G    0.1178   0.07974         0    0.1976       157      1024:  12%|█▏        | 3/25 [03:27<18:55, 51.62s/it]       0/4        0G    0.1178   0.07974         0    0.1976       157      1024:  16%|█▌        | 4/25 [03:27<17:55, 51.22s/it]       0/4        0G     0.118   0.07927         0    0.1973       140      1024:  16%|█▌        | 4/25 [04:18<17:55, 51.22s/it]       0/4        0G     0.118   0.07927         0    0.1973       140      1024:  20%|██        | 5/25 [04:18<17:01, 51.09s/it]

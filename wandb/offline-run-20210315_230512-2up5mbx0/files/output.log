@@ -1,0 +1,39 @@
+Scanning images:   0%|          | 0/1976 [00:00<?, ?it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 103 found, 0 missing, 0 empty, 0 corrupted:   5%|▌         | 103/1976 [00:00<00:01, 1024.26it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 235 found, 0 missing, 0 empty, 0 corrupted:  12%|█▏        | 235/1976 [00:00<00:01, 1196.11it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 364 found, 0 missing, 0 empty, 0 corrupted:  18%|█▊        | 364/1976 [00:00<00:01, 1236.67it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 491 found, 0 missing, 0 empty, 0 corrupted:  25%|██▍       | 491/1976 [00:00<00:01, 1248.85it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 629 found, 0 missing, 0 empty, 0 corrupted:  32%|███▏      | 629/1976 [00:00<00:01, 1295.99it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 776 found, 0 missing, 0 empty, 0 corrupted:  39%|███▉      | 776/1976 [00:00<00:00, 1353.63it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 914 found, 0 missing, 0 empty, 0 corrupted:  46%|████▋     | 914/1976 [00:00<00:00, 1360.08it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1051 found, 0 missing, 0 empty, 0 corrupted:  53%|█████▎    | 1051/1976 [00:00<00:00, 1340.78it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1212 found, 0 missing, 0 empty, 0 corrupted:  61%|██████▏   | 1212/1976 [00:00<00:00, 1423.82it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1355 found, 0 missing, 0 empty, 0 corrupted:  69%|██████▊   | 1355/1976 [00:01<00:00, 1380.68it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1494 found, 0 missing, 0 empty, 0 corrupted:  76%|███████▌  | 1494/1976 [00:01<00:00, 1358.89it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1631 found, 0 missing, 0 empty, 0 corrupted:  83%|████████▎ | 1631/1976 [00:01<00:00, 1341.44it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1766 found, 0 missing, 0 empty, 0 corrupted:  89%|████████▉ | 1766/1976 [00:01<00:00, 1337.07it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1905 found, 0 missing, 0 empty, 0 corrupted:  96%|█████████▋| 1905/1976 [00:01<00:00, 1351.05it/s][34m[1mtrain: [0mScanning 'data/train/labels' for images and labels... 1976 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 1976/1976 [00:01<00:00, 1329.78it/s]
+[34m[1mtrain: [0mNew cache created: data/train/labels.cache
+Scanning images:   0%|          | 0/100 [00:00<?, ?it/s][34m[1mval: [0mScanning 'data/validation/labels' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<00:00, 1614.65it/s]
+[34m[1mval: [0mNew cache created: data/validation/labels.cache
+Plotting labels... 
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.64, Best Possible Recall (BPR) = 0.9996
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/exp11
+Starting training for 5 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/124 [00:00<?, ?it/s]  0%|          | 0/124 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 531, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "train.py", line 296, in train
+    pred = model(imgs)  # forward
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/models/yolo.py", line 121, in forward
+    return self.forward_once(x, profile)  # single-scale inference, train
+  File "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/models/yolo.py", line 137, in forward_once
+    x = m(x)  # run
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/models/common.py", line 39, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/conv.py", line 399, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/conv.py", line 395, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 14238) is killed by signal: Terminated: 15. 
+Images sizes do not match. This will causes images to be display incorrectly in the UI.

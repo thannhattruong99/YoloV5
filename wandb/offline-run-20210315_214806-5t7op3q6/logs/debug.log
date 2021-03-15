@@ -1,0 +1,24 @@
+2021-03-15 21:48:06,400 INFO    MainThread:11771 [wandb_setup.py:_flush():69] setting env: {}
+2021-03-15 21:48:06,400 INFO    MainThread:11771 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-03-15 21:48:06,400 INFO    MainThread:11771 [wandb_setup.py:_flush():69] setting login settings: {'mode': 'offline'}
+2021-03-15 21:48:06,401 INFO    MainThread:11771 [wandb_init.py:_log_setup():334] Logging user logs to /Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/wandb/offline-run-20210315_214806-5t7op3q6/logs/debug.log
+2021-03-15 21:48:06,401 INFO    MainThread:11771 [wandb_init.py:_log_setup():335] Logging internal logs to /Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/wandb/offline-run-20210315_214806-5t7op3q6/logs/debug-internal.log
+2021-03-15 21:48:06,401 INFO    MainThread:11771 [wandb_init.py:init():367] calling init triggers
+2021-03-15 21:48:06,401 INFO    MainThread:11771 [wandb_init.py:init():372] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': '', 'data': 'data/coco128.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, 'epochs': 5, 'batch_size': 16, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'log_imgs': 16, 'log_artifacts': False, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs/train/exp', 'total_batch_size': 16}
+2021-03-15 21:48:06,401 INFO    MainThread:11771 [wandb_init.py:init():416] starting backend
+2021-03-15 21:48:06,401 INFO    MainThread:11771 [backend.py:_multiprocessing_setup():69] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-03-15 21:48:06,414 INFO    MainThread:11771 [backend.py:ensure_launched():123] starting backend process...
+2021-03-15 21:48:06,422 INFO    MainThread:11771 [backend.py:ensure_launched():127] started backend process with pid: 11807
+2021-03-15 21:48:06,424 INFO    MainThread:11771 [wandb_init.py:init():421] backend started and connected
+2021-03-15 21:48:06,428 INFO    MainThread:11771 [wandb_init.py:init():461] updated telemetry
+2021-03-15 21:48:06,430 INFO    MainThread:11771 [wandb_init.py:init():518] starting run threads in backend
+2021-03-15 21:48:09,801 INFO    MainThread:11771 [wandb_run.py:_console_start():1480] atexit reg
+2021-03-15 21:48:09,801 INFO    MainThread:11771 [wandb_run.py:_redirect():1343] redirect: SettingsConsole.REDIRECT
+2021-03-15 21:48:09,802 INFO    MainThread:11771 [wandb_run.py:_redirect():1348] Redirecting console.
+2021-03-15 21:48:09,802 INFO    MainThread:11771 [redirect.py:install():213] install start
+2021-03-15 21:48:09,803 INFO    MainThread:11771 [redirect.py:install():228] install stop
+2021-03-15 21:48:09,803 INFO    MainThread:11771 [redirect.py:install():213] install start
+2021-03-15 21:48:09,803 INFO    MainThread:11771 [redirect.py:install():228] install stop
+2021-03-15 21:48:09,803 INFO    MainThread:11771 [wandb_run.py:_redirect():1394] Redirects installed.
+2021-03-15 21:48:09,803 INFO    MainThread:11771 [wandb_init.py:init():542] run started, returning control to user process
