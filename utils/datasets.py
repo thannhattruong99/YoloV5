@@ -120,7 +120,8 @@ class _RepeatSampler(object):
 
 
 class LoadImages:  # for inference
-    def __init__(self, path, img_size=640, stride=32):
+    # TruongTN add fps
+    def __init__(self, path, img_size=640, stride=32, frameLimit=0):
         p = str(Path(path).absolute())  # os-agnostic absolute path
         if '*' in p:
             files = sorted(glob.glob(p, recursive=True))  # glob
@@ -141,6 +142,8 @@ class LoadImages:  # for inference
         self.nf = ni + nv  # number of files
         self.video_flag = [False] * ni + [True] * nv
         self.mode = 'image'
+        # TruongTN
+        self.frameLimit= frameLimit
         if any(videos):
             self.new_video(videos[0])  # new video
         else:
@@ -156,7 +159,10 @@ class LoadImages:  # for inference
         if self.count == self.nf:
             raise StopIteration
         path = self.files[self.count]
-
+        # TruongTN
+        # flag: true, limit fps detect
+        # flag: false, default fps
+        flagIgnore = True
         if self.video_flag[self.count]:
             # Read video
             self.mode = 'video'
@@ -172,8 +178,23 @@ class LoadImages:  # for inference
                     ret_val, img0 = self.cap.read()
 
             self.frame += 1
-            print(f'video {self.count + 1}/{self.nf} ({self.frame}/{self.nframes}) {path}: ', end='')
+            # TruongTN, limit frame per seconds
+            if self.frameLimit != 0:
+                flagIgnore = False
+                numb = self.frame % self.fps
+                for i in range(self.frameLimit):
+                    if int(numb) == i:
+                        flagIgnore = True
 
+                # flagIgnore: true, detect image
+                if flagIgnore:
+                    second = round(self.frame/self.fps)
+                    print(f'Second {second}s : ', end='')
+            else:
+                second = round(self.frame/self.fps)
+                print(f'Second {second}s : ', end='')
+            # print(f'video {self.count + 1}/{self.nf} ({self.frame}/{self.nframes}) {path}: ', end='')
+            
         else:
             # Read image
             self.count += 1
@@ -187,12 +208,15 @@ class LoadImages:  # for inference
         # Convert
         img = img[:, :, ::-1].transpose(2, 0, 1)  # BGR to RGB, to 3x416x416
         img = np.ascontiguousarray(img)
-
-        return path, img, img0, self.cap
+        # TruongTN add flag
+        return flagIgnore, path, img, img0, self.cap
 
     def new_video(self, path):
         self.frame = 0
         self.cap = cv2.VideoCapture(path)
+        # TruongTN
+        self.fps = int(self.cap.get(cv2.CAP_PROP_FPS))
+        # 
         self.nframes = int(self.cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
     def __len__(self):
