@@ -1,12 +1,0 @@
-[34m[1mtrain: [0mScanning 'data/train/Person.cache' for images and labels... 400 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 400/400 [00:00<?, ?it/s][34m[1mtrain: [0mScanning 'data/train/Person.cache' for images and labels... 400 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 400/400 [00:00<?, ?it/s]
-[34m[1mval: [0mScanning 'data/validation/Person.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s][34m[1mval: [0mScanning 'data/validation/Person.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s]
-Plotting labels... 
-
-[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.29, Best Possible Recall (BPR) = 1.0000
-Image sizes 1024 train, 1024 test
-Using 8 dataloader workers
-Logging results to runs/train/exp6
-Starting training for 5 epochs...
-
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-  0%|          | 0/25 [00:00<?, ?it/s]       0/4        0G    0.1195   0.07665         0    0.1962       116      1024:   0%|          | 0/25 [01:06<?, ?it/s]       0/4        0G    0.1195   0.07665         0    0.1962       116      1024:   4%|▍         | 1/25 [01:06<26:40, 66.70s/it]

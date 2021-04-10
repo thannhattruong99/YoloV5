@@ -1,12 +1,0 @@
-[34m[1mtrain: [0mScanning '../coco128/labels/train2017.cache' for images and labels... 128 found, 0 missing, 2 empty, 0 corrupted: 100%|██████████| 128/128 [00:00<?, ?it/s][34m[1mtrain: [0mScanning '../coco128/labels/train2017.cache' for images and labels... 128 found, 0 missing, 2 empty, 0 corrupted: 100%|██████████| 128/128 [00:00<?, ?it/s]
-[34m[1mval: [0mScanning '../coco128/labels/train2017.cache' for images and labels... 128 found, 0 missing, 2 empty, 0 corrupted: 100%|██████████| 128/128 [00:00<?, ?it/s][34m[1mval: [0mScanning '../coco128/labels/train2017.cache' for images and labels... 128 found, 0 missing, 2 empty, 0 corrupted: 100%|██████████| 128/128 [00:00<?, ?it/s]
-Plotting labels... 
-
-[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.26, Best Possible Recall (BPR) = 0.9946
-Image sizes 640 train, 640 test
-Using 8 dataloader workers
-Logging results to runs/train/exp
-Starting training for 5 epochs...
-
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-  0%|          | 0/8 [00:00<?, ?it/s]       0/4        0G   0.04049    0.0697   0.01764    0.1278       228       640:   0%|          | 0/8 [00:19<?, ?it/s]       0/4        0G   0.04049    0.0697   0.01764    0.1278       228       640:  12%|█▎        | 1/8 [00:19<02:18, 19.75s/it]       0/4        0G   0.04157   0.05996   0.01998    0.1215       162       640:  12%|█▎        | 1/8 [00:36<02:18, 19.75s/it]       0/4        0G   0.04157   0.05996   0.01998    0.1215       162       640:  25%|██▌       | 2/8 [00:36<01:46, 17.83s/it]

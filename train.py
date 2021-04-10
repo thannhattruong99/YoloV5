@@ -133,6 +133,7 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
                                project='YOLOv5' if opt.project == 'runs/train' else Path(opt.project).stem,
                                name=save_dir.stem,
                                entity=opt.entity,
+                               mode = 'offline',
                                id=ckpt.get('wandb_id') if 'ckpt' in locals() else None)
     loggers = {'wandb': wandb}  # loggers dict
 
