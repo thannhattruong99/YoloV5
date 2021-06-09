@@ -1,0 +1,41 @@
+[34m[1mtrain: [0mScanning 'data/train/labels.cache' for images and labels... 1976 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 1976/1976 [00:00<?, ?it/s][34m[1mtrain: [0mScanning 'data/train/labels.cache' for images and labels... 1976 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 1976/1976 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning 'data/validation/labels.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s][34m[1mval: [0mScanning 'data/validation/labels.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s]
+Plotting labels... 
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.64, Best Possible Recall (BPR) = 0.9996
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/exp3
+Starting training for 300 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/31 [00:00<?, ?it/s]  0%|          | 0/31 [00:07<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 532, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "train.py", line 297, in train
+    pred = model(imgs)  # forward
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/models/yolo.py", line 121, in forward
+    return self.forward_once(x, profile)  # single-scale inference, train
+  File "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/models/yolo.py", line 137, in forward_once
+    x = m(x)  # run
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/models/common.py", line 114, in forward
+    return self.conv(torch.cat([x[..., ::2, ::2], x[..., 1::2, ::2], x[..., ::2, 1::2], x[..., 1::2, 1::2]], 1))
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5/models/common.py", line 39, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/conv.py", line 399, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/nn/modules/conv.py", line 395, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+  File "/Users/truongtn/Library/Python/3.8/lib/python/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 12187) is killed by signal: Killed: 9. 
+Images sizes do not match. This will causes images to be display incorrectly in the UI.

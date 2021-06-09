@@ -1,0 +1,31 @@
+{
+    "os": "macOS-11.2.3-x86_64-i386-64bit",
+    "python": "3.8.2",
+    "heartbeatAt": "2021-04-10T11:27:33.708884",
+    "startedAt": "2021-04-10T11:27:31.387053",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--batch-size",
+        "64",
+        "--data",
+        "coco.yaml",
+        "--weights",
+        "yolov5s.pt",
+        "--device",
+        "cpu"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/thannhattruong99/YoloV5.git",
+        "commit": "a3e42f8b9f75188c23755737c873877b1946a95c"
+    },
+    "email": "truongtnse130426@fpt.edu.vn",
+    "root": "/Users/truongtn/Desktop/Desktop/HocTap/Semester8/Python/YoloV5/yolov5",
+    "host": "MacBook-Pro-cua-Than.local",
+    "username": "truongtn",
+    "executable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3"
+}

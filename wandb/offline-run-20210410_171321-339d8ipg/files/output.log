@@ -1,0 +1,12 @@
+[34m[1mtrain: [0mScanning 'data/train/labels.cache' for images and labels... 1976 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 1976/1976 [00:00<?, ?it/s][34m[1mtrain: [0mScanning 'data/train/labels.cache' for images and labels... 1976 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 1976/1976 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning 'data/validation/labels.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s][34m[1mval: [0mScanning 'data/validation/labels.cache' for images and labels... 100 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 100/100 [00:00<?, ?it/s]
+Plotting labels... 
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 4.64, Best Possible Recall (BPR) = 0.9996
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/exp
+Starting training for 300 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/31 [00:00<?, ?it/s]     0/299        0G    0.1197   0.04839         0    0.1681       499       640:   0%|          | 0/31 [01:48<?, ?it/s]     0/299        0G    0.1197   0.04839         0    0.1681       499       640:   3%|▎         | 1/31 [01:48<54:20, 108.69s/it]     0/299        0G    0.1192   0.04636         0    0.1655       435       640:   3%|▎         | 1/31 [03:24<54:20, 108.69s/it]     0/299        0G    0.1192   0.04636         0    0.1655       435       640:   6%|▋         | 2/31 [03:24<48:58, 101.33s/it]
